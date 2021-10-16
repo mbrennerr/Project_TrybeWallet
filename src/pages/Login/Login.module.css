@@ -1,0 +1,228 @@
+.main {
+  animation: AnimationName 5s ease infinite;
+  background: linear-gradient(152deg, #31d9e3, #ce35ad);
+  background-size: 200% 200%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 85vh 5vh;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.main > article:nth-of-type( 2 ) {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  width: 100%;
+}
+
+.articleHeader {
+  display: grid;
+  place-items: center;
+}
+
+.articleFooter {
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  font-family: sans-serif;
+}
+
+.footer {
+  filter: drop-shadow(2px 4px 6px black);
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 10px;
+}
+
+.form {
+  align-items: stretch;
+  border: inset 0.5px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgb(0 0 0 / 55%);
+  display: grid;
+  gap: 10px;
+  height: 55%;
+  padding: 10px;
+  place-items: center;
+  width: 90%;
+}
+
+.mobileLogo {
+  filter: drop-shadow(2px 4px 6px black);
+  width: 275px;
+}
+
+.labelsInputs {
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgb(0 0 0 / 75%);
+  height: 100%;
+  width: 100%;
+}
+
+.inputs {
+  border: 0;
+  border-radius: 10px;
+  height: 100%;
+  padding: 5px;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.inputs:hover {
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+.btn {
+  background-color: #3cb0fd;
+  border-radius: 60px;
+  color: rgb(232, 232, 240);
+  cursor: pointer;
+  font-size: 20px;
+  height: 70%;
+  padding: 15px 40px;
+  transition: all 0.5s;
+  width: 50%;
+}
+
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #6b23a6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #31d9e3;
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+.btn:disabled {
+  background: rgba(155, 151, 151, 10%);
+  cursor: not-allowed;
+}
+
+.desktopArticlelogo {
+  display: none;
+}
+
+/* .btn {
+  background: #3498db;
+  background-image: linear-gradient(top, #3498db, #742e8f);
+  border-radius: 28px;
+  color: #fafafa;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 9px 20px 10px;
+  text-decoration: none;
+} */
+
+/* CONFIG DESKTOP */
+
+@media screen and ( min-width : 1025px ) {
+
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+  }
+
+  .desktopArticlelogo {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+  }
+
+  .mobileLogo {
+    display: none;
+
+  }
+
+  .desktopLogo {
+    filter: drop-shadow(2px 4px 6px black);
+    transition: all 0.5s;
+  }
+
+  .desktopLogo:hover {
+    transform: translateY(-3px);
+  }
+
+  .form {
+    justify-items: unset;
+    padding: 15px;
+    place-items: center;
+    width: 80%;
+
+  }
+
+  .labelsInputs {
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 75%);
+    height: 70%;
+    width: 80%;
+  }
+
+  .inputs {
+    border: 0;
+    border-radius: 10px;
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .articleHeader {
+    grid-column: 1/3;
+  }
+
+  .articleFooter {
+    grid-column: 1/3;
+  }
+
+  .btn {
+    border-radius: 15px;
+
+  }
+
+}
+
+@keyframes AnimationName {
+
+  0% { background-position: 0% 78%;}
+
+  50% { background-position: 100% 23%;}
+
+  100% { background-position: 0% 78%;}
+}
+
+@keyframes AnimationName {
+
+  0% { background-position: 0% 78%;}
+
+  50% { background-position: 100% 23%;}
+
+  100% { background-position: 0% 78%;}
+}
+
+@keyframes AnimationName {
+
+  0% { background-position: 0% 78%;}
+
+  50% { background-position: 100% 23%;}
+
+  100% { background-position: 0% 78%;}
+}
+
+@keyframes AnimationName {
+
+  0% { background-position: 0% 78%;}
+
+  50% { background-position: 100% 23%;}
+
+  100% { background-position: 0% 78%;}
+}
+
+
+
+/* BTN */
+
